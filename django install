@@ -6,4 +6,7 @@ pip install django
 easy_install south
 django-admin.py startproject project
 cd project
-django-admin.py startapp links
+
+# configure database in settings.py
+
+./manage.py syncdb
