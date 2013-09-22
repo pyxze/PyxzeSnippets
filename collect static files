@@ -1,0 +1,2 @@
+cd static
+../manage.py collectstatic
