@@ -1,2 +1,4 @@
 cd static
 ../manage.py collectstatic
+
+source: https://docs.djangoproject.com/en/dev/ref/contrib/staticfiles/
