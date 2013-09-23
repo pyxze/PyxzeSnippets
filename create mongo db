@@ -1,0 +1,6 @@
+mongo
+use howler
+j = { name : "mongo" }
+k = { x : 3 }
+db.testData.insert( j )
+db.testData.insert( k )
