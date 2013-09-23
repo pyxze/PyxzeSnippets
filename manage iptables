@@ -1,0 +1,12 @@
+iptables-save > iptables
+iptables-restore < iptables
+service iptables save
+service iptables start
+
+If you are using Debian / Ubuntu Linux open /etc/network/interfaces:
+# vi /etc/network/interfaces
+Append the line to eth0 section:
+post-up iptables-restore
+Close and save the file. Reboot the system.
+
+source: http://www.cyberciti.biz/faq/how-do-i-save-iptables-rules-or-settings/
