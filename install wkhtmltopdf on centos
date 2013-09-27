@@ -1,0 +1,7 @@
+sudo -s
+# It's better to use the stable 0.9.9 -- 0.11.0 produces QPixmap errors.
+wget http://wkhtmltopdf.googlecode.com/files/wkhtmltopdf-0.9.9-static-amd64.tar.bz2
+tar xvfj wkhtmltopdf-0.9.9-static-amd64.tar.bz2
+mv wkhtmltopdf-amd64 /usr/bin
+yum install -y openssl-devel
+yum install -y urw-fonts
