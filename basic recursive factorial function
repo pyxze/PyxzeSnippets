@@ -2,6 +2,16 @@ def fact(n):
     if n == 1:
         return n
     else:
-        return n * exp(n-1)
+        return n * fact(n-1)
         
-fact(5) => 120
+fact(5) # returns 120
+
+from http://www.lornajane.net/posts/2012/php-recursive-function-example-factorial-numbers
+
+function factorial($number) { 
+    if ($number < 2) { 
+        return 1; 
+    } else { 
+        return ($number * factorial($number-1)); 
+    } 
+}
